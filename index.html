@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder TV | Oficial ⚡</title>
+    <style>
+        :root {
+            --negro-fondo: #0a0a0a;
+            --amarillo-thunder: #ffea00;
+            --gris-transparente: rgba(26, 26, 26, 0.85);
+            --texto-blanco: #ffffff;
+            --rojo-alerta: #ff4d4d;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            color: var(--texto-blanco);
+            background-color: var(--negro-fondo);
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), 
+                              url('https://thundertvhd.com/wp-content/uploads/2025/12/thunder-tv-hd-oficial.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid var(--amarillo-thunder);
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: var(--amarillo-thunder);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px var(--amarillo-thunder);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 12vw, 6.5rem);
+            margin: 0;
+            color: var(--amarillo-thunder);
+            text-transform: uppercase;
+            text-shadow: 2px 5px 20px rgba(0,0,0,0.8);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            background: rgba(0,0,0,0.5);
+            padding: 10px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .btn-thunder {
+            background-color: var(--amarillo-thunder);
+            color: black;
+            padding: 20px 50px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 0 25px var(--amarillo-thunder);
+            transition: 0.3s;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        .btn-thunder:hover { transform: scale(1.1); box-shadow: 0 0 50px var(--amarillo-thunder); }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .card {
+            background: var(--gris-transparente);
+            border-left: 6px solid var(--amarillo-thunder);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 0 20px 20px 0;
+            backdrop-filter: blur(5px);
+        }
+
+        .card h2 { color: var(--amarillo-thunder); margin: 0 0 15px 0; }
+        .card p { font-family: Arial, sans-serif; line-height: 1.6; margin: 5px 0; }
+
+        /* Estilos específicos para dispositivos */
+        .dispositivo-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 2px solid rgba(255, 234, 0, 0.3);
+        }
+
+        .alerta-vega {
+            background: rgba(255, 77, 77, 0.15);
+            border: 1px solid var(--rojo-alerta);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .precios-box {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid var(--amarillo-thunder);
+            margin-top: 50px;
+            backdrop-filter: blur(10px);
+        }
+
+        .precios-box ul { padding: 0; }
+
+        .precios-box li {
+            list-style: none;
+            border-bottom: 1px solid #444;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            font-family: Arial, sans-serif;
+        }
+
+        .precio-tag { color: var(--amarillo-thunder); font-weight: bold; }
+
+        .btn-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            width: 65px;
+            height: 65px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover { transform: scale(1.1); background-color: #20ba5a; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Thunder TV ⚡</div>
+    </nav>
+
+    <header class="hero">
+        <h1>THUNDER TV</h1>
+        <p>El poder del rayo en tu pantalla. Todo el contenido premium que amas.</p>
+        <a href="https://wa.me/4421863825" class="btn-thunder">¡PIDE TU DEMO!</a>
+    </header>
+
+    <div class="content">
+        <div class="card">
+            <h2>📱 DISPOSITIVOS COMPATIBLES</h2>
+            <div class="dispositivo-item">
+                <p><b>• Amazon Fire TV Stick:</b> Compatible con versiones Lite, 4K y 4K Max (basadas en Fire OS).</p>
+            </div>
+            <div class="dispositivo-item">
+                <p><b>• TV Box con sistema Android:</b> Compatible con las marcas más populares.</p>
+            </div>
+            <div class="dispositivo-item">
+                <p><b>• Smart TVs Android:</b> Instalación directa sin equipos extra.</p>
+            </div>
+
+            <div class="alerta-vega">
+                <b>⚠️ Nota Importante:</b> El nuevo modelo <b>Fire TV Stick Select</b> no es compatible con la instalación de nuestra <b>Thunder TV APK</b> debido a su sistema Vega OS. Si tienes este modelo, consulta nuestras alternativas por WhatsApp.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>⚡ CONTENIDO SIN LÍMITES</h2>
+           /*<p>Accede a más de 3000 canales en vivo, incluyendo deportes, cultura y estrenos de cine semanales con la mayor estabilidad del mercado.</p>*/
+	    <p>Más de 16,000 canales de todo el mundo</p>
+	    <p>Películas y series estrenos actualizados cada semana</p>
+	    <p>Deportes en vivo: F1, UFC, NFL, NBA, Lucha Libre, Futbol todas las ligas del mundo.</p>
+        </div>
+
+        <div class="precios-box">
+            <h2 style="color: var(--amarillo-thunder); text-align: center; font-size: 2rem; margin-top: 0;">PLANES</h2>
+            <ul>
+                <li><span>⭐ 1 Mes</span> <span class="precio-tag">$250 MXN</span></li>
+                <li><span>⭐⭐ 3 Meses</span> <span class="precio-tag">$650 MXN</span></li>
+                <li><span>⭐⭐⭐ 6 Meses</span> <span class="precio-tag">$1200 MXN</span></li>
+                <li><span>⭐⭐⭐⭐ 12 Meses</span> <span class="precio-tag">$2160 MXN</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="https://wa.me/4421863825?text=Hola,%20quiero%20información%20de%20Thunder%20TV" class="btn-whatsapp" title="Contáctanos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px;">
+    </a>
+
+    <footer style="text-align: center; padding: 60px 20px; color: #777; font-size: 0.8rem; font-family: Arial, sans-serif;">
+        &copy; 2026 Thunder TV. Servicio de Streaming de alta calidad.
+    </footer>
+
+</body>
+</html>
